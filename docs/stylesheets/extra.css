@@ -1,0 +1,82 @@
+/* Custom styles for the cybersecurity course */
+
+/* Improve code block styling */
+.highlight .filename {
+  background-color: var(--md-code-bg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+/* Style for terminal/command blocks */
+.language-bash::before {
+  content: "$ ";
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* Custom admonition styles for security warnings */
+.md-typeset .admonition.warning {
+  border-left-color: #ff9800;
+}
+
+.md-typeset .admonition.security {
+  border-left-color: #f44336;
+}
+
+.md-typeset .admonition.security > .admonition-title {
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+.md-typeset .admonition.lab {
+  border-left-color: #2196f3;
+}
+
+.md-typeset .admonition.lab > .admonition-title {
+  background-color: rgba(33, 150, 243, 0.1);
+}
+
+/* Improve table styling */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-weight: 600;
+}
+
+/* Style for external links */
+.md-content a[href^="http"]:not([href*="yourusername.github.io"])::after {
+  content: "↗";
+  margin-left: 0.25rem;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* Improve spacing for lists in content */
+.md-typeset li {
+  margin-bottom: 0.5rem;
+}
+
+/* Custom styling for the CIA triad and other key concepts */
+.concept-highlight {
+  background: linear-gradient(
+    135deg,
+    var(--md-primary-fg-color--light),
+    var(--md-primary-fg-color)
+  );
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* Style for keyboard shortcuts */
+kbd {
+  background-color: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.3rem;
+  font-size: 0.85em;
+  font-family: var(--md-code-font-family);
+}
