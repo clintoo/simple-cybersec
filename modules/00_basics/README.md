@@ -97,4 +97,4 @@ If the file changes, the hash will too — showing a loss of **integrity**.
 ---
 
 ✅ You’ve now covered the essential basics.
-Next, we’ll dive into **Networking Fundamentals** in Module 2.
+Next, we’ll dive into **Networking Fundamentals** in Module 1
